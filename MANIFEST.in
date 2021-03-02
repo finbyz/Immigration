@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include immigration *.css
+recursive-include immigration *.csv
+recursive-include immigration *.html
+recursive-include immigration *.ico
+recursive-include immigration *.js
+recursive-include immigration *.json
+recursive-include immigration *.md
+recursive-include immigration *.png
+recursive-include immigration *.py
+recursive-include immigration *.svg
+recursive-include immigration *.txt
+recursive-exclude immigration *.pyc

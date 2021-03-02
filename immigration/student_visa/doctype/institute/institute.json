@@ -1,0 +1,523 @@
+{
+ "autoname": "field:institute_name",
+ "creation": "2021-02-26 16:33:50.976419",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "institute_general_section",
+  "institute_name",
+  "institute_type",
+  "about_institute_information",
+  "website",
+  "attached_rep_agreement",
+  "column_break_9",
+  "campus_name",
+  "students_recruit_for_institute",
+  "tie_up",
+  "recruitment_rights",
+  "email_id",
+  "image",
+  "attached_institute_agreement",
+  "column_break_22",
+  "country",
+  "state_name",
+  "city_name",
+  "country_code",
+  "agreement_tenure",
+  "brochure",
+  "address_and_contact_section",
+  "address_html",
+  "column_break_7",
+  "contact_html",
+  "authority_section",
+  "department",
+  "institute_authority_type",
+  "authority_person_name",
+  "column_break_29",
+  "phone_no",
+  "mobile_no",
+  "skype_id",
+  "programs_requirements_section",
+  "program_name",
+  "program_level",
+  "study_main_area",
+  "program_duration",
+  "program_duration_type",
+  "academic_level",
+  "minimum_academic_result",
+  "column_break_38",
+  "academic_result_type",
+  "post_study_work_rights",
+  "dependent_allow",
+  "column_break_35",
+  "required_any_exam",
+  "exam_name",
+  "exam_type",
+  "minimum_score_required",
+  "bank_details_section",
+  "account_name",
+  "bank_name",
+  "branch_name",
+  "branch_address",
+  "column_break_52",
+  "accounty_type",
+  "account_no",
+  "ifsc_code",
+  "iban_code",
+  "swift_number",
+  "recipient_mobile_number",
+  "recipient__email_id",
+  "commission_section",
+  "commission_of",
+  "commission_in",
+  "commission",
+  "column_break_65",
+  "slab_or_fixed",
+  "slab"
+ ],
+ "fields": [
+  {
+   "fieldname": "institute_general_section",
+   "fieldtype": "Section Break",
+   "label": "Institute General"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "state_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "city_name",
+   "fieldtype": "Link",
+   "label": "City Name",
+   "options": "City"
+  },
+  {
+   "fetch_from": "country.code",
+   "fieldname": "country_code",
+   "fieldtype": "Data",
+   "label": "Country Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "agreement_tenure",
+   "fieldtype": "Attach Image",
+   "label": " Agreement Tenure"
+  },
+  {
+   "fieldname": "brochure",
+   "fieldtype": "Attach",
+   "label": "Brochure"
+  },
+  {
+   "fieldname": "institute_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institute Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "institute_type",
+   "fieldtype": "Link",
+   "label": "Institute Type",
+   "options": "Institute Type"
+  },
+  {
+   "fieldname": "about_institute_information",
+   "fieldtype": "Small Text",
+   "label": "About Institute Information"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Attach",
+   "label": "Website"
+  },
+  {
+   "fieldname": "attached_rep_agreement",
+   "fieldtype": "Attach",
+   "label": "Attached Rep Agreement"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "campus_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campus Name"
+  },
+  {
+   "fieldname": "students_recruit_for_institute",
+   "fieldtype": "Select",
+   "label": "Students Recruit for Institute?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "tie_up",
+   "fieldtype": "Link",
+   "label": "Tie Up",
+   "options": "Tie Up Type"
+  },
+  {
+   "fieldname": "recruitment_rights",
+   "fieldtype": "Link",
+   "label": "Recruitment Rights",
+   "options": "Recruitment Rights"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "attached_institute_agreement",
+   "fieldtype": "Attach",
+   "label": "Attached Institute Agreement"
+  },
+  {
+   "collapsible_depends_on": "eval:!doc.__islocal",
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact",
+   "options": "fa fa-map-marker"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": " Contact HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "authority_section",
+   "fieldtype": "Section Break",
+   "label": "Authority"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "institute_authority_type",
+   "fieldtype": "Link",
+   "label": "Institute Authority Type",
+   "options": "Institute Authority Type"
+  },
+  {
+   "fetch_from": "institute_authority_type.authority_person_name",
+   "fieldname": "authority_person_name",
+   "fieldtype": "Data",
+   "label": "Authority Person Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "skype_id",
+   "fieldtype": "Data",
+   "label": " Skype ID"
+  },
+  {
+   "fieldname": "programs_requirements_section",
+   "fieldtype": "Section Break",
+   "label": "Programs Requirements"
+  },
+  {
+   "fetch_from": "program_name.course_duration",
+   "fieldname": "program_duration",
+   "fieldtype": "Data",
+   "label": "Program Duration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "academic_level",
+   "fieldtype": "Link",
+   "label": "Academic Level",
+   "options": "Education Level"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "academic_result_type",
+   "fieldtype": "Link",
+   "label": "Academic Result Type",
+   "options": "Academic Result Type"
+  },
+  {
+   "fetch_from": "academic_level.minimum_result_required",
+   "fieldname": "minimum_academic_result",
+   "fieldtype": "Data",
+   "label": "Minimum Academic Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "post_study_work_rights",
+   "fieldtype": "Small Text",
+   "label": "Post Study Work Rights"
+  },
+  {
+   "fieldname": "dependent_allow",
+   "fieldtype": "Select",
+   "label": "Dependent Allow?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "required_any_exam",
+   "fieldtype": "Select",
+   "label": "Required Any Exam?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "exam_name",
+   "fieldtype": "Link",
+   "label": "Exam Name",
+   "options": "Exam"
+  },
+  {
+   "fieldname": "exam_type",
+   "fieldtype": "Link",
+   "label": "Exam Type",
+   "options": "Exam Type"
+  },
+  {
+   "fetch_from": "exam_name.minimum_score_required",
+   "fieldname": "minimum_score_required",
+   "fieldtype": "Data",
+   "label": "Minimum Score Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details "
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Link",
+   "label": "Account Name",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "account_name.bank",
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.branch_name",
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.branch_address",
+   "fieldname": "branch_address",
+   "fieldtype": "Small Text",
+   "label": "Branch Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "account_name.account_type",
+   "fieldname": "accounty_type",
+   "fieldtype": "Data",
+   "label": "Accounty Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.bank_account_no",
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No.",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.ifsc_code",
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.iban",
+   "fieldname": "iban_code",
+   "fieldtype": "Data",
+   "label": "IBAN Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.swift_number",
+   "fieldname": "swift_number",
+   "fieldtype": "Data",
+   "label": "SWIFT number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.mobile_number",
+   "fieldname": "recipient_mobile_number",
+   "fieldtype": "Data",
+   "label": "Recipient Mobile Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_name.email_id",
+   "fieldname": "recipient__email_id",
+   "fieldtype": "Data",
+   "label": "Recipient  Email ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_section",
+   "fieldtype": "Section Break",
+   "label": "Commission"
+  },
+  {
+   "fieldname": "commission_of",
+   "fieldtype": "Data",
+   "label": "Commission Of"
+  },
+  {
+   "fieldname": "commission_in",
+   "fieldtype": "Data",
+   "label": "Commission In"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Percent",
+   "label": "Commission"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "slab_or_fixed",
+   "fieldtype": "Data",
+   "label": "Slab or Fixed"
+  },
+  {
+   "fieldname": "slab",
+   "fieldtype": "Data",
+   "label": "Slab"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Link",
+   "label": " Program Name",
+   "options": "Program"
+  },
+  {
+   "fetch_from": "program_name.program_level",
+   "fieldname": "program_level",
+   "fieldtype": "Data",
+   "label": "Program Level",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "program_name.study_main_area",
+   "fieldname": "study_main_area",
+   "fieldtype": "Data",
+   "label": "Study Main Area",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "program_name.program_duration_type",
+   "fieldname": "program_duration_type",
+   "fieldtype": "Data",
+   "label": "Program Duration Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "image_field": "image",
+ "modified": "2021-03-02 12:20:46.557086",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Institute",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,90 @@
+{
+ "autoname": "field:education_level",
+ "creation": "2021-02-27 13:26:04.972132",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "education_level",
+  "minimum_marks_in_special_subject",
+  "maximum_backlogs",
+  "column_break_3",
+  "subject_required",
+  "minimum_result_required",
+  "maximum_gap_after_academic"
+ ],
+ "fields": [
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Education Level",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "minimum_result_required",
+   "fieldtype": "Int",
+   "label": "Minimum Result Required"
+  },
+  {
+   "fieldname": "maximum_backlogs",
+   "fieldtype": "Int",
+   "label": "Maximum Backlogs"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject_required",
+   "fieldtype": "Data",
+   "label": "Subject Required"
+  },
+  {
+   "fieldname": "minimum_marks_in_special_subject",
+   "fieldtype": "Int",
+   "label": "Minimum Marks in Special Subject"
+  },
+  {
+   "fieldname": "maximum_gap_after_academic",
+   "fieldtype": "Int",
+   "label": "Maximum Gap after academic"
+  }
+ ],
+ "modified": "2021-02-27 13:42:39.986768",
+ "modified_by": "Administrator",
+ "module": "Immigration",
+ "name": "Education Level",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

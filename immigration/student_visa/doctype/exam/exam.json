@@ -1,0 +1,98 @@
+{
+ "autoname": "field:exam_name",
+ "creation": "2021-02-26 14:18:25.118436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exam_name",
+  "exam_type",
+  "module_1",
+  "module_2",
+  "column_break_4",
+  "minimum_score_required",
+  "module_3",
+  "module_4"
+ ],
+ "fields": [
+  {
+   "fieldname": "exam_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exam Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "exam_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exam Type",
+   "options": "Exam Type"
+  },
+  {
+   "fieldname": "module_1",
+   "fieldtype": "Data",
+   "label": "Module 1"
+  },
+  {
+   "fieldname": "module_2",
+   "fieldtype": "Data",
+   "label": "Module 2"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_score_required",
+   "fieldtype": "Data",
+   "label": "Minimum score required"
+  },
+  {
+   "fieldname": "module_3",
+   "fieldtype": "Data",
+   "label": "Module 3"
+  },
+  {
+   "fieldname": "module_4",
+   "fieldtype": "Data",
+   "label": "Module 4"
+  }
+ ],
+ "modified": "2021-03-01 16:38:49.587593",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Exam",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,120 @@
+{
+ "autoname": "field:license_no",
+ "creation": "2021-02-27 11:28:04.313613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "license_no",
+  "license_full_name",
+  "license_short_name",
+  "issuing_authority",
+  "responsible_for_renewal",
+  "column_break_5",
+  "license_issue_date",
+  "license_validity",
+  "license_valid_up_to",
+  "attached_certificate"
+ ],
+ "fields": [
+  {
+   "fieldname": "license_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "license_full_name",
+   "fieldtype": "Data",
+   "label": "License Full Name"
+  },
+  {
+   "fieldname": "license_short_name",
+   "fieldtype": "Data",
+   "label": "License Short Name"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": " Issuing Authority"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_issue_date",
+   "fieldtype": "Date",
+   "label": "License Issue Date"
+  },
+  {
+   "fieldname": "license_validity",
+   "fieldtype": "Int",
+   "label": " License Validity Period (Month)"
+  },
+  {
+   "fieldname": "license_valid_up_to",
+   "fieldtype": "Date",
+   "label": " License Valid Up to"
+  },
+  {
+   "fieldname": "attached_certificate",
+   "fieldtype": "Attach",
+   "label": "Attached Certificate"
+  },
+  {
+   "fieldname": "responsible_for_renewal",
+   "fieldtype": "Link",
+   "label": "Responsible for Renewal",
+   "options": "User"
+  }
+ ],
+ "modified": "2021-02-27 11:33:13.627433",
+ "modified_by": "Administrator",
+ "module": "Immigration",
+ "name": "License",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Local Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
