@@ -5,17 +5,27 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "recruitment_category",
   "requirment"
  ],
  "fields": [
   {
    "fieldname": "requirment",
    "fieldtype": "Data",
-   "label": "requirment",
+   "in_list_view": 1,
+   "label": "Requirment",
+   "reqd": 1,
    "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "recruitment_category",
+   "fieldtype": "Link",
+   "label": "Recruitment Category",
+   "options": "Recruitment Category"
   }
  ],
- "modified": "2021-02-27 16:44:20.069332",
+ "modified": "2021-03-19 16:01:24.771800",
  "modified_by": "Administrator",
  "module": "Immigration",
  "name": "Recruitment Rights",
@@ -30,6 +40,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
    "share": 1,
    "write": 1
   }

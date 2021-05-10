@@ -1,0 +1,38 @@
+{
+ "autoname": "PAS.####",
+ "creation": "2021-03-08 09:52:02.211187",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_level",
+  "study_main_area"
+ ],
+ "fields": [
+  {
+   "fieldname": "study_main_area",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Study Main Area",
+   "options": "Study Main Area"
+  },
+  {
+   "fieldname": "program_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program Level",
+   "options": "Program Level"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-08 09:57:13.690417",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Program Level And Study Main Area",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

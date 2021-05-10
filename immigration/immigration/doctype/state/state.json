@@ -22,10 +22,11 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Country",
-   "options": "Country"
+   "options": "Country",
+   "reqd": 1
   }
  ],
- "modified": "2021-02-27 13:55:43.952852",
+ "modified": "2021-03-17 12:27:52.560745",
  "modified_by": "Administrator",
  "module": "Immigration",
  "name": "State",

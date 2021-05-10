@@ -1,0 +1,116 @@
+{
+ "creation": "2021-03-02 14:14:17.628589",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account_name",
+  "accounty_type",
+  "account_no",
+  "bank_name",
+  "column_break_2",
+  "branch_name",
+  "ifsc_code",
+  "swift_number",
+  "iban_code",
+  "column_break_4",
+  "recipient_mobile_number",
+  "branch_address",
+  "recipient_email_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account Name",
+   "options": "Bank Account",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "account_name.bank",
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Name"
+  },
+  {
+   "fetch_from": "account_name.branch_name",
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Name"
+  },
+  {
+   "fetch_from": "account_name.branch_address",
+   "fieldname": "branch_address",
+   "fieldtype": "Small Text",
+   "label": "Branch Address"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "account_name.account_type",
+   "fieldname": "accounty_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Accounty Type"
+  },
+  {
+   "fetch_from": "account_name.bank_account_no",
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account No."
+  },
+  {
+   "fetch_from": "account_name.ifsc_code",
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IFSC Code"
+  },
+  {
+   "fetch_from": "account_name.iban",
+   "fieldname": "iban_code",
+   "fieldtype": "Data",
+   "label": "IBAN Code"
+  },
+  {
+   "fetch_from": "account_name.swift_number",
+   "fieldname": "swift_number",
+   "fieldtype": "Data",
+   "label": "SWIFT number"
+  },
+  {
+   "fetch_from": "account_name.mobile_number",
+   "fieldname": "recipient_mobile_number",
+   "fieldtype": "Data",
+   "label": "Recipient Mobile Number"
+  },
+  {
+   "fetch_from": "account_name.email_id",
+   "fieldname": "recipient_email_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Recipient Email ID"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-19 14:17:14.417558",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Institute Bank  Accounts",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

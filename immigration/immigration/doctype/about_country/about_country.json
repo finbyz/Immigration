@@ -1,0 +1,55 @@
+{
+ "creation": "2021-03-16 10:09:21.078840",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "about_country_main_tile",
+  "about_country_sub_tile",
+  "column_break_2",
+  "information",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "information",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Information"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "about_country_main_tile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "About Country Main Tile",
+   "options": "About Main Title"
+  },
+  {
+   "fieldname": "about_country_sub_tile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "About Country Sub Tile",
+   "options": "About Sub Title"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-16 12:43:29.793273",
+ "modified_by": "Administrator",
+ "module": "Immigration",
+ "name": "About Country",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,72 @@
+{
+ "autoname": "field:taluka",
+ "creation": "2021-03-17 10:29:38.927883",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "taluka",
+  "district",
+  "country",
+  "column_break_3",
+  "state"
+ ],
+ "fields": [
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Taluka",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "district.country_name",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "district.state_name",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "read_only": 1
+  }
+ ],
+ "modified": "2021-03-17 10:53:34.858305",
+ "modified_by": "Administrator",
+ "module": "Immigration",
+ "name": "Taluka",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -14,4 +14,3 @@ class Institute(Document):
 	
 	def on_trash(self):
 		delete_contact_and_address('Institute', self.name)
-		

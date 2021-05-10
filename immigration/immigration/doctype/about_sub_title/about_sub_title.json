@@ -1,0 +1,56 @@
+{
+ "autoname": "field:about_country_sub_tile",
+ "creation": "2021-03-16 10:24:39.911461",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "about_country_sub_tile"
+ ],
+ "fields": [
+  {
+   "fieldname": "about_country_sub_tile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "About Country Sub Tile",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "modified": "2021-03-16 14:29:16.089904",
+ "modified_by": "Administrator",
+ "module": "Immigration",
+ "name": "About Sub Title",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "about_country_sub_tile",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -40,6 +40,14 @@ def get_data():
 					"type": "doctype",
 					"name": "License",
 				},
+				{
+					"type": "doctype",
+					"name": "Company Work Area",
+				},
+				{
+					"type": "doctype",
+					"name": "Visa Catagory",
+				},
 			]
 		},
 		

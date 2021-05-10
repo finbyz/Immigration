@@ -1,23 +1,31 @@
 {
- "autoname": "field:study_area",
+ "autoname": "field:study_main_area",
  "creation": "2021-02-26 18:10:09.087738",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "study_area"
+  "study_main_area",
+  "program_level"
  ],
  "fields": [
   {
-   "fieldname": "study_area",
+   "fieldname": "program_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program level",
+   "options": "Program Level"
+  },
+  {
+   "fieldname": "study_main_area",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Study Area",
+   "label": " Study Main Area",
    "reqd": 1,
    "unique": 1
   }
  ],
- "modified": "2021-03-01 17:54:50.094612",
+ "modified": "2021-03-19 14:31:52.164725",
  "modified_by": "Administrator",
  "module": "Student Visa",
  "name": "Study Main Area",

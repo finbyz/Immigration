@@ -1,0 +1,68 @@
+{
+ "creation": "2021-03-11 12:56:44.274053",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_divided_in",
+  "number_of_subject",
+  "column_break_1",
+  "subject_group_name",
+  "number_of_division",
+  "column_break_4",
+  "total_subject"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_of_division",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number Of Division"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_subject",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Subject"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_divided_in",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program Divided In",
+   "options": "Program Divided In"
+  },
+  {
+   "fieldname": "number_of_subject",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number Of Subject"
+  },
+  {
+   "fieldname": "subject_group_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject Group Name",
+   "options": "Subject Group Name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-11 17:49:22.822331",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Subject",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

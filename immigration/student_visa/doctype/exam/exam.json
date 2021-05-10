@@ -6,13 +6,15 @@
  "engine": "InnoDB",
  "field_order": [
   "exam_name",
-  "exam_type",
+  "test_type",
   "module_1",
   "module_2",
+  "socre_requirement_type",
   "column_break_4",
   "minimum_score_required",
   "module_3",
-  "module_4"
+  "module_4",
+  "if_law_score"
  ],
  "fields": [
   {
@@ -22,13 +24,6 @@
    "label": "Exam Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "exam_type",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Exam Type",
-   "options": "Exam Type"
   },
   {
    "fieldname": "module_1",
@@ -58,9 +53,27 @@
    "fieldname": "module_4",
    "fieldtype": "Data",
    "label": "Module 4"
+  },
+  {
+   "fieldname": "socre_requirement_type",
+   "fieldtype": "Link",
+   "label": "Socre Requirement Type",
+   "options": "Socre Requirement Type"
+  },
+  {
+   "fieldname": "if_law_score",
+   "fieldtype": "Link",
+   "label": " If law Score, Admission Possible?",
+   "options": "Admission Possible"
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Link",
+   "label": "Test Type",
+   "options": "Test Type"
   }
  ],
- "modified": "2021-03-01 16:38:49.587593",
+ "modified": "2021-03-17 15:51:23.946897",
  "modified_by": "Administrator",
  "module": "Student Visa",
  "name": "Exam",

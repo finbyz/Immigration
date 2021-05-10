@@ -1,0 +1,101 @@
+{
+ "autoname": "field:commission_in",
+ "creation": "2021-03-10 16:25:37.661250",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_level",
+  "study_main_area",
+  "program_duration",
+  "column_break_2",
+  "commission_of",
+  "commission_in",
+  "commission_slab",
+  "column_break_4",
+  "from_student",
+  "to_student",
+  "commission"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program Level",
+   "options": "Program Level"
+  },
+  {
+   "fieldname": "study_main_area",
+   "fieldtype": "Link",
+   "label": "Study Main Area",
+   "options": "Study Main Area"
+  },
+  {
+   "fieldname": "program_duration",
+   "fieldtype": "Data",
+   "label": "Program Duration"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_of",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Commission Of",
+   "options": "Commission Of"
+  },
+  {
+   "columns": 1,
+   "fieldname": "commission_in",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Commission In",
+   "options": "Commission In",
+   "unique": 1
+  },
+  {
+   "fieldname": "commission_slab",
+   "fieldtype": "Link",
+   "label": "Commission Slab",
+   "options": "Commission Slab"
+  },
+  {
+   "columns": 1,
+   "fieldname": "from_student",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "From Student"
+  },
+  {
+   "columns": 1,
+   "fieldname": "to_student",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "To Student"
+  },
+  {
+   "columns": 1,
+   "fieldname": "commission",
+   "fieldtype": "Data",
+   "label": "Commission"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-19 14:19:48.341226",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Commission Structure",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

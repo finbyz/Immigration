@@ -1,0 +1,83 @@
+{
+ "creation": "2021-03-11 10:55:19.189615",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "education_level",
+  "subject_required",
+  "column_break_2",
+  "minimum_result_required",
+  "minimum_marks_in_special_subject",
+  "column_break_4",
+  "maximum_backlogs",
+  "maximum_gap_after_academic"
+ ],
+ "fields": [
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Education Level",
+   "options": "Education Level",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "education_level.minimum_result_required",
+   "fieldname": "minimum_result_required",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Minimum Result Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "education_level.maximum_backlogs",
+   "fieldname": "maximum_backlogs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Maximum Backlogs"
+  },
+  {
+   "fetch_from": "education_level.subject_required",
+   "fieldname": "subject_required",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject Required"
+  },
+  {
+   "fetch_from": "education_level.minimum_marks_in_special_subject",
+   "fieldname": "minimum_marks_in_special_subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Minimum Marks in Special Subject"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "education_level.maximum_gap_after_academic",
+   "fieldname": "maximum_gap_after_academic",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Maximum Gap after academic"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-11 11:09:14.047832",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Academic Requirements",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,142 @@
+{
+ "creation": "2021-03-11 09:44:36.428381",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "required_any_test",
+  "module_1",
+  "module_4",
+  "additional_course_name",
+  "additional_course_required",
+  "column_break_2",
+  "test_type",
+  "module_2",
+  "socre_requirement_type",
+  "course_duration",
+  "column_break_4",
+  "test_name",
+  "module_3",
+  "total_score_required",
+  "cost_for_additional_course",
+  "if_law_score"
+ ],
+ "fields": [
+  {
+   "fieldname": "required_any_test",
+   "fieldtype": "Link",
+   "label": "Required Any Test",
+   "options": "Required Test Type"
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Test Type",
+   "options": "Test Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Test Name",
+   "options": "Exam",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "test_name.socre_requirement_type",
+   "fieldname": "socre_requirement_type",
+   "fieldtype": "Data",
+   "label": "Socre Requirement Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "test_name.minimum_score_required",
+   "fieldname": "total_score_required",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Score Required",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "test_name.module_1",
+   "fieldname": "module_1",
+   "fieldtype": "Data",
+   "label": "Module 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "test_name.module_2",
+   "fieldname": "module_2",
+   "fieldtype": "Data",
+   "label": "Module 2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "test_name.module_3",
+   "fieldname": "module_3",
+   "fieldtype": "Data",
+   "label": "Module 3",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "test_name.module_4",
+   "fieldname": "module_4",
+   "fieldtype": "Data",
+   "label": "Module 4",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "test_name.if_law_score",
+   "fieldname": "if_law_score",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "If Law Score",
+   "options": "Admission Possible"
+  },
+  {
+   "depends_on": "eval:doc.if_law_score != \"not possible\"",
+   "fieldname": "additional_course_required",
+   "fieldtype": "Small Text",
+   "label": "Additional Course Required"
+  },
+  {
+   "fieldname": "additional_course_name",
+   "fieldtype": "Link",
+   "label": "Additional Course Name",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "additional_course_name.course_duration",
+   "fieldname": "course_duration",
+   "fieldtype": "Data",
+   "label": "Course Duration"
+  },
+  {
+   "fetch_from": "additional_course_name.cost_of_course",
+   "fieldname": "cost_for_additional_course",
+   "fieldtype": "Currency",
+   "label": "Cost for Additional Course"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-12 11:03:37.497934",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Test Requirements",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

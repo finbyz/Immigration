@@ -1,0 +1,54 @@
+{
+ "autoname": "field:about_institute_title",
+ "creation": "2021-03-11 12:45:01.756985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "about_institute_title",
+  "column_break_2",
+  "about_institute_information",
+  "column_break_4",
+  "photograph"
+ ],
+ "fields": [
+  {
+   "fieldname": "about_institute_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "About Institute Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "about_institute_information",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": " About Institute Information"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photograph",
+   "fieldtype": "Attach Image",
+   "label": "Photograph"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-17 17:44:16.041166",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "Institute Detail Information",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

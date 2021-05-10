@@ -1,0 +1,91 @@
+{
+ "creation": "2021-03-08 10:00:04.118259",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "intake_month",
+  "intake_name",
+  "column_break_2",
+  "application_deadline",
+  "visa_application_deadline",
+  "column_break_4",
+  "scholorship_application_deadline",
+  "program_complete_date",
+  "program_start_date",
+  "maximum_seats"
+ ],
+ "fields": [
+  {
+   "fieldname": "application_deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Application Deadline"
+  },
+  {
+   "fieldname": "visa_application_deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Visa Application Deadline"
+  },
+  {
+   "fieldname": "scholorship_application_deadline",
+   "fieldtype": "Date",
+   "label": "Scholorship Application Deadline"
+  },
+  {
+   "fieldname": "intake_month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Intake Month"
+  },
+  {
+   "fieldname": "intake_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Intake Name",
+   "options": "Intake Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "program_start_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Program Start Date"
+  },
+  {
+   "fieldname": "program_complete_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Program Complete Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "maximum_seats",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Maximum Seats"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-19 12:59:37.649589",
+ "modified_by": "Administrator",
+ "module": "Student Visa",
+ "name": "INTAKE AND DEADLINE",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

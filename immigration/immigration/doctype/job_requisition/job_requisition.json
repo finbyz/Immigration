@@ -1,0 +1,250 @@
+{
+ "autoname": "field:requested_department",
+ "creation": "2021-03-06 10:42:23.750525",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_requisition_section",
+  "company_name",
+  "state",
+  "requested_department",
+  "number_of_position",
+  "reason_for_requirement",
+  "working_hours",
+  "total_existing_manpower",
+  "internal_arrangement_acceptable",
+  "proposed_name_of_employee",
+  "column_break_3",
+  "office_category",
+  "city_name",
+  "request_by",
+  "under_supervisor",
+  "qualification_required",
+  "skilled_required",
+  "column_break_5",
+  "country",
+  "date_of_request",
+  "requested_job_designation",
+  "position_type",
+  "work_experience_required",
+  "brief_desctiption_of_the_job",
+  "job_requisition_approval_section",
+  "requisition_status",
+  "desition",
+  "column_break_27",
+  "desition_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "office_category",
+   "fieldtype": "Link",
+   "label": "Office Category",
+   "options": "Company Category"
+  },
+  {
+   "fieldname": "job_requisition_section",
+   "fieldtype": "Section Break",
+   "label": "Job Requisition"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "City Name",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_request",
+   "fieldtype": "Date",
+   "label": "Date Of Request"
+  },
+  {
+   "fieldname": "requested_department",
+   "fieldtype": "Link",
+   "label": "Requested Department",
+   "options": "Department",
+   "unique": 1
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Link",
+   "label": " Request By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "requested_job_designation",
+   "fieldtype": "Link",
+   "label": "Requested Job Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "number_of_position",
+   "fieldtype": "Int",
+   "label": "Number Of Position"
+  },
+  {
+   "fieldname": "under_supervisor",
+   "fieldtype": "Link",
+   "label": "Under Supervisor",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "position_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position Type",
+   "options": "Position Type"
+  },
+  {
+   "fieldname": "qualification_required",
+   "fieldtype": "Small Text",
+   "label": "Qualification Required"
+  },
+  {
+   "fieldname": "work_experience_required",
+   "fieldtype": "Small Text",
+   "label": "Work Experience Required"
+  },
+  {
+   "fieldname": "skilled_required",
+   "fieldtype": "Small Text",
+   "label": "Skilled Required"
+  },
+  {
+   "fieldname": "brief_desctiption_of_the_job",
+   "fieldtype": "Small Text",
+   "label": "Brief Desctiption of the Job"
+  },
+  {
+   "fieldname": "reason_for_requirement",
+   "fieldtype": "Link",
+   "label": "Reason for Requirement",
+   "options": "Reason For Requirement"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Link",
+   "label": "Working Hours",
+   "options": "Working Hours"
+  },
+  {
+   "fieldname": "total_existing_manpower",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Existing Manpower"
+  },
+  {
+   "fieldname": "internal_arrangement_acceptable",
+   "fieldtype": "Select",
+   "label": "Internal Arrangement Acceptable ?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "proposed_name_of_employee",
+   "fieldtype": "Link",
+   "label": "Proposed Name Of Employee",
+   "options": "Employee"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "job_requisition_approval_section",
+   "fieldtype": "Section Break",
+   "label": "JOB REQUISITION APPROVAL"
+  },
+  {
+   "fieldname": "desition_date",
+   "fieldtype": "Date",
+   "label": "Desition Date"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requisition_status",
+   "fieldtype": "Link",
+   "label": "Requisition Status",
+   "options": "Requisition Status"
+  },
+  {
+   "fieldname": "desition",
+   "fieldtype": "Link",
+   "label": "Desition",
+   "options": "Desition"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2021-03-06 12:30:15.338820",
+ "modified_by": "Administrator",
+ "module": "Immigration",
+ "name": "Job Requisition",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
